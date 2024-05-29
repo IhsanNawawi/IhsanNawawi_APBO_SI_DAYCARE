@@ -1,4 +1,6 @@
 # APBO_SI_Daycare
+# Nama : Ihsan Nawawi
+# NPM  : 4522210027
 
 ## Use Case Diagram
 
@@ -30,21 +32,26 @@ Orang tua/wali menjemput anak dan menandatangani formulir penjemputan.
 ![Class Diagram](classdiagram.png)
 
 Penjelasan:
+
 Class Anak:
 Atribut: idAnak, nama, tglLahir, alamat, idOrangTua
 Menyimpan informasi tentang anak yang terdaftar di daycare.
 Class Orang Tua/Wali:
 Atribut: idOrangTua, nama, alamat, noTelp, email
 Menyimpan informasi tentang orang tua atau wali dari anak yang terdaftar.
+
 Class Staf:
 Atribut: idStaf, nama, alamat, noTelp, kualifikasi
 Menyimpan informasi tentang staf yang bekerja di daycare.
+
 Class Jadwal:
 Atribut: idJadwal, waktuBuka, waktuTutup, waktuMakan, waktuBermain
 Menyimpan informasi tentang jadwal operasional daycare.
+
 Class Kehadiran:
 Atribut: idKehadiran, idAnak, idStaf, tanggal, waktuCheckIn, waktuCheckOut
 Menyimpan informasi tentang kehadiran anak di daycare.
+
 Class Laporan:
 Atribut: idLaporan, idAnak, tanggal, laporanKehadiran, laporanKesehatan, laporanPerkembangan
 Menyimpan informasi tentang laporan daycare, termasuk kehadiran, kesehatan, dan perkembangan anak.
@@ -56,8 +63,13 @@ Menyimpan informasi tentang laporan daycare, termasuk kehadiran, kesehatan, dan 
 Penjelasan:
 
 Orang Tua > Anak (One to Many): Seorang orang tua dapat memiliki banyak anak.
+
 Anak > Kehadiran (One to Many): Seorang anak dapat memiliki banyak catatan kehadiran.
+
 Staf > Kehadiran (One to Many): Seorang staf dapat mencatat kehadiran banyak anak.
+
 Jadwal > Anak (Many to Many): Anak dapat mengikuti banyak jadwal, dan satu jadwal dapat diikuti oleh banyak anak.
+
 Laporan > Anak (One to Many): Seorang anak dapat memiliki banyak laporan.
+
 Staf > Jadwal (One to Many): Seorang staf memiliki banyak jadwal.
