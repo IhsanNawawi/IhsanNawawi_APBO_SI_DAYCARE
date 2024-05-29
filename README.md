@@ -27,7 +27,7 @@ Orang tua/wali menjemput anak dan menandatangani formulir penjemputan.
 
 ## Class Diagram
 
-![Class Diagram](class diagram.png)
+![Class Diagram](classdiagram.png)
 
 Penjelasan:
 Class Anak:
